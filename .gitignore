@@ -1,0 +1,35 @@
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const navButton = document.querySelector(".nav-button");
+if (navButton) {
+  navButton.addEventListener("click", () => {
+    window.scrollTo({ top: document.querySelector("#inventory").offsetTop - 80, behavior: "smooth" });
+  });
+}
+
+const primaryButton = document.querySelector(".primary");
+if (primaryButton) {
+  primaryButton.addEventListener("click", () => {
+    window.scrollTo({ top: document.querySelector("#inventory").offsetTop - 80, behavior: "smooth" });
+  });
+}
+
+const secondaryButton = document.querySelector(".secondary");
+if (secondaryButton) {
+  secondaryButton.addEventListener("click", () => {
+    window.scrollTo({ top: document.querySelector("#workflow").offsetTop - 80, behavior: "smooth" });
+  });
+}
+
+const heroButtons = document.querySelectorAll("button");
+heroButtons.forEach((button) => {
+  if (button.classList.contains("primary") || button.classList.contains("secondary") || button.classList.contains("nav-button")) {
+    button.addEventListener("mouseenter", () => {
+      button.style.transform = "translateY(-1px)";
+    });
+    button.addEventListener("mouseleave", () => {
+      button.style.transform = "translateY(0)";
+    });
+  }
+});
+

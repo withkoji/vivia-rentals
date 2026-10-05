@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIVIA Rentals Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">V</span>
+          <span>VIVIA Rentals</span>
+        </div>
+        <nav>
+          <a href="#inventory">Inventory</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#security">Privacy</a>
+        </nav>
+        <button class="nav-button">Request a tour</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Secure • Simple • Connected</p>
+          <h1>Modern rental operations for listings, tours, applications, and payments.</h1>
+          <p class="lede">
+            A preview of the VIVIA Rentals experience: property marketing, lead intake,
+            verification, leasing progress, and clear operational tracking.
+          </p>
+          <div class="cta-row">
+            <button class="primary">View listings</button>
+            <button class="secondary">See workflow</button>
+          </div>
+          <ul class="mini-stats">
+            <li><strong>24h</strong><span>Response target</span></li>
+            <li><strong>3-step</strong><span>Application flow</span></li>
+            <li><strong>100%</strong><span>Sanitized preview</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="feature-card large">
+            <div class="card-top">
+              <span class="status live">Available</span>
+              <span class="price">$2,750/mo</span>
+            </div>
+            <h3>Maple Terrace Condo</h3>
+            <p>2 Bed • 2 Bath • 1,240 sq ft</p>
+            <div class="amenities">
+              <span>In-unit laundry</span>
+              <span>Parking</span>
+              <span>Pet friendly</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="inventory" class="container listings">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Featured homes</p>
+            <h2>Available homes & units</h2>
+          </div>
+          <a href="#">Browse all listings</a>
+        </div>
+
+        <div class="property-grid">
+          <article class="property-card">
+            <div class="property-image image-one"></div>
+            <div class="property-body">
+              <div class="property-head">
+                <h3>Riverside One</h3>
+                <span>Available</span>
+              </div>
+              <p>2 Bed • 1 Bath • Downtown view</p>
+              <div class="meta-row">
+                <strong>$2,100/mo</strong>
+                <span>Tour booked</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="property-image image-two"></div>
+            <div class="property-body">
+              <div class="property-head">
+                <h3>Oak & Pine</h3>
+                <span>New</span>
+              </div>
+              <p>3 Bed • 2 Bath • Quiet neighborhood</p>
+              <div class="meta-row">
+                <strong>$3,150/mo</strong>
+                <span>Applications open</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="property-image image-three"></div>
+            <div class="property-body">
+              <div class="property-head">
+                <h3>Harbor Lofts</h3>
+                <span>Waitlist</span>
+              </div>
+              <p>1 Bed • 1 Bath • Rooftop access</p>
+              <div class="meta-row">
+                <strong>$1,980/mo</strong>
+                <span>Priority status</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="workflow" class="container workflow">
+        <div class="section-header center">
+          <div>
+            <p class="eyebrow">Operational flow</p>
+            <h2>From inquiry to move-in</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="step">
+            <span class="step-number">01</span>
+            <h3>Listing</h3>
+            <p>Publish live property details, images, amenities, and availability.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">02</span>
+            <h3>Tour</h3>
+            <p>Coordinate scheduling, confirmations, and self-tour access where needed.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">03</span>
+            <h3>Application</h3>
+            <p>Capture renter details, screening workflow, and application fees.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">04</span>
+            <h3>Lease</h3>
+            <p>Secure deposit, send documents, collect signatures, and confirm move-in.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="security" class="container info-grid">
+        <div class="panel">
+          <p class="eyebrow">Data model</p>
+          <h3>Public vs. private boundary</h3>
+          <ul>
+            <li>Public: pricing, bed/bath counts, listing images, location summaries</li>
+            <li>Private: tenant screening, KYC, payment credentials, loan or bank details</li>
+            <li>Operational: workflow states, sync events, document references</li>
+          </ul>
+        </div>
+
+        <div class="panel accent">
+          <p class="eyebrow">Payment tracking</p>
+          <h3>Structured flow</h3>
+          <div class="status-stack">
+            <div><span class="dot green"></span> Application fee pending</div>
+            <div><span class="dot yellow"></span> Deposit ready</div>
+            <div><span class="dot blue"></span> Lease signed</div>
+            <div><span class="dot purple"></span> Move-in confirmed</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>VIVIA Rentals preview · Public-facing concept workflow</p>
+      <span id="year"></span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
