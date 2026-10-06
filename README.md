@@ -1,5 +1,9 @@
 # VIVIA Rentals Public Preview
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9207acdc-efc0-4b6e-9a93-576ec4b3622d/deploy-status)](https://app.netlify.com/projects/withkoji/deploys)
+
+**Active deployment:** [Open the VIVIA Rentals Netlify deployment dashboard](https://app.netlify.com/projects/withkoji/deploys)
+
 This repository is the public preview and deployment surface for VIVIA Rentals. It provides safe public navigation to the live VIVIA applications while keeping production data, credentials, payment secrets, and private operational code out of the public repository.
 
 ## Live applications
