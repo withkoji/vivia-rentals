@@ -1,189 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIVIA Rentals Preview</title>
-    <meta
-      name="description"
-      content="VIVIA Rentals public preview for rental listings, applicant flow, leasing workflow, and payment tracking."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
-          <span class="brand-mark">V</span>
-          <span>VIVIA Rentals</span>
-        </div>
-        <nav>
-          <a href="#inventory">Inventory</a>
-          <a href="#workflow">Workflow</a>
-          <a href="#security">Privacy</a>
-        </nav>
-        <button class="nav-button">Request a tour</button>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero container">
-        <div class="hero-copy">
-          <p class="eyebrow">Secure • Simple • Connected</p>
-          <h1>Modern rental operations for listings, tours, applications, and payments.</h1>
-          <p class="lede">
-            A preview of the VIVIA Rentals experience: property marketing, lead intake,
-            verification, leasing progress, and clear operational tracking.
-          </p>
-          <div class="cta-row">
-            <button class="primary">View listings</button>
-            <button class="secondary">See workflow</button>
-          </div>
-          <ul class="mini-stats">
-            <li><strong>24h</strong><span>Response target</span></li>
-            <li><strong>3-step</strong><span>Application flow</span></li>
-            <li><strong>100%</strong><span>Sanitized preview</span></li>
-          </ul>
-        </div>
-
-        <div class="hero-visual">
-          <div class="feature-card large">
-            <div class="card-top">
-              <span class="status live">Available</span>
-              <span class="price">$2,750/mo</span>
-            </div>
-            <h3>Maple Terrace Condo</h3>
-            <p>2 Bed • 2 Bath • 1,240 sq ft</p>
-            <div class="amenities">
-              <span>In-unit laundry</span>
-              <span>Parking</span>
-              <span>Pet friendly</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="inventory" class="container listings">
-        <div class="section-header">
-          <div>
-            <p class="eyebrow">Featured homes</p>
-            <h2>Available homes & units</h2>
-          </div>
-          <a href="#">Browse all listings</a>
-        </div>
-
-        <div class="property-grid">
-          <article class="property-card">
-            <div class="property-image image-one"></div>
-            <div class="property-body">
-              <div class="property-head">
-                <h3>Riverside One</h3>
-                <span>Available</span>
-              </div>
-              <p>2 Bed • 1 Bath • Downtown view</p>
-              <div class="meta-row">
-                <strong>$2,100/mo</strong>
-                <span>Tour booked</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="property-card">
-            <div class="property-image image-two"></div>
-            <div class="property-body">
-              <div class="property-head">
-                <h3>Oak & Pine</h3>
-                <span>New</span>
-              </div>
-              <p>3 Bed • 2 Bath • Quiet neighborhood</p>
-              <div class="meta-row">
-                <strong>$3,150/mo</strong>
-                <span>Applications open</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="property-card">
-            <div class="property-image image-three"></div>
-            <div class="property-body">
-              <div class="property-head">
-                <h3>Harbor Lofts</h3>
-                <span>Waitlist</span>
-              </div>
-              <p>1 Bed • 1 Bath • Rooftop access</p>
-              <div class="meta-row">
-                <strong>$1,980/mo</strong>
-                <span>Priority status</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="workflow" class="container workflow">
-        <div class="section-header center">
-          <div>
-            <p class="eyebrow">Operational flow</p>
-            <h2>From inquiry to move-in</h2>
-          </div>
-        </div>
-
-        <div class="timeline">
-          <div class="step">
-            <span class="step-number">01</span>
-            <h3>Listing</h3>
-            <p>Publish live property details, images, amenities, and availability.</p>
-          </div>
-          <div class="step">
-            <span class="step-number">02</span>
-            <h3>Tour</h3>
-            <p>Coordinate scheduling, confirmations, and self-tour access where needed.</p>
-          </div>
-          <div class="step">
-            <span class="step-number">03</span>
-            <h3>Application</h3>
-            <p>Capture renter details, screening workflow, and application fees.</p>
-          </div>
-          <div class="step">
-            <span class="step-number">04</span>
-            <h3>Lease</h3>
-            <p>Secure deposit, send documents, collect signatures, and confirm move-in.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="security" class="container info-grid">
-        <div class="panel">
-          <p class="eyebrow">Data model</p>
-          <h3>Public vs. private boundary</h3>
-          <ul>
-            <li>Public: pricing, bed/bath counts, listing images, location summaries</li>
-            <li>Private: tenant screening, KYC, payment credentials, loan or bank details</li>
-            <li>Operational: workflow states, sync events, document references</li>
-          </ul>
-        </div>
-
-        <div class="panel accent">
-          <p class="eyebrow">Payment tracking</p>
-          <h3>Structured flow</h3>
-          <div class="status-stack">
-            <div><span class="dot green"></span> Application fee pending</div>
-            <div><span class="dot yellow"></span> Deposit ready</div>
-            <div><span class="dot blue"></span> Lease signed</div>
-            <div><span class="dot purple"></span> Move-in confirmed</div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="container footer">
-      <p>VIVIA Rentals preview · Public-facing concept workflow</p>
-      <span id="year"></span>
-    </footer>
-
-    <script type="module" src="/script.js"></script>
-  </body>
-</html>
+* { box-sizing: border-box; }
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #20312d;
+  background: #f6f8f7;
+}
+body { margin: 0; min-width: 320px; background: #f6f8f7; color: #20312d; }
+a { color: inherit; text-decoration: none; }
+.container { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+.site-header { position: sticky; top: 0; z-index: 20; background: #38574f; color: white; box-shadow: 0 2px 12px rgba(0,0,0,.12); }
+.header-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 12px; background: #fff; color: #38574f; font-weight: 900; letter-spacing: -.04em; }
+.brand strong { display: block; font-size: 20px; }
+.brand span { display: block; font-size: 12px; opacity: .72; margin-top: 2px; text-transform: uppercase; letter-spacing: .11em; }
+.hero { display: grid; grid-template-columns: 1.5fr .8fr; gap: 28px; padding: 72px 0 32px; }
+.hero-copy, .hero-panel, .card, .integrations { background: white; border: 1px solid #dfe6e3; border-radius: 24px; box-shadow: 0 18px 40px rgba(43, 72, 64, .07); }
+.hero-copy { padding: 48px; }
+.hero-panel { padding: 34px; display: flex; flex-direction: column; justify-content: center; }
+.eyebrow { margin: 0 0 10px; color: #a87524; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .15em; }
+h1 { margin: 0; max-width: 760px; color: #29463f; font-size: clamp(42px, 7vw, 74px); line-height: .96; letter-spacing: -.04em; }
+.lede { margin: 24px 0 0; max-width: 760px; color: #63706c; font-size: 19px; line-height: 1.65; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 999px; font-weight: 800; transition: transform .15s ease, opacity .15s ease; }
+.button:hover { transform: translateY(-1px); }
+.button-primary { background: #38574f; color: #fff; }
+.button-accent { background: #a87524; color: #fff; }
+.button-secondary { background: #fff; color: #38574f; }
+.status-pill { align-self: flex-start; padding: 7px 11px; border-radius: 999px; background: #e8f5ef; color: #2f7d55; font-size: 12px; font-weight: 800; }
+.hero-panel h2 { margin: 18px 0 10px; color: #29463f; font-size: 28px; }
+.hero-panel p { margin: 0; color: #687470; line-height: 1.65; }
+.app-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; padding: 24px 0; }
+.card { padding: 26px; }
+.card h2 { margin: 0 0 10px; color: #29463f; font-size: 20px; }
+.card p { margin: 0 0 18px; color: #697571; line-height: 1.55; }
+.card a { color: #8a621f; font-weight: 800; }
+.integrations { margin-top: 8px; padding: 34px; }
+.integrations h2 { margin: 0; color: #29463f; font-size: 30px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.chips span { padding: 9px 12px; border-radius: 999px; background: #edf2f0; color: #38574f; font-weight: 700; font-size: 13px; }
+.note { margin: 22px 0 0; color: #6b7773; line-height: 1.6; }
+.site-footer { margin-top: 48px; border-top: 1px solid #dde5e2; background: #edf2f0; }
+.footer-inner { min-height: 90px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #60706a; }
+.footer-inner a { font-weight: 700; color: #38574f; }
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; padding-top: 40px; }
+  .app-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .container { width: min(100% - 20px, 1160px); }
+  .header-inner { min-height: 68px; }
+  .brand span { display: none; }
+  .hero-copy { padding: 30px 22px; }
+  .hero-panel, .integrations { padding: 24px; }
+  .app-grid { grid-template-columns: 1fr; }
+  .footer-inner { flex-direction: column; justify-content: center; padding: 22px 0; }
+}

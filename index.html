@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VIVIA Rentals public preview for property listings, payments, renter tools, and operations." />
+  <title>VIVIA Rentals</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark">VV</div>
+        <div>
+          <strong>VIVIA Rentals</strong>
+          <span>Rental operations preview</span>
+        </div>
+      </div>
+      <a class="button button-secondary" href="https://github.com/withkoji/vivia-rentals" target="_blank" rel="noreferrer">View GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Property Management & Leasing</p>
+        <h1>One public entry point for VIVIA Rentals.</h1>
+        <p class="lede">Browse rentals, pay online, access renter tools, and connect to VIVIA's live Zite applications from a safe public preview.</p>
+        <div class="actions">
+          <a class="button button-primary" href="https://viviarentalhomes.zite.so" target="_blank" rel="noreferrer">Browse Rentals</a>
+          <a class="button button-accent" href="https://pay-now.zite.so" target="_blank" rel="noreferrer">Make a Payment</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <span class="status-pill">Live integrations connected</span>
+        <h2>Public preview, private operations</h2>
+        <p>Production data and credentials remain inside Zite. This GitHub/Netlify site exposes only safe links and public information.</p>
+      </aside>
+    </section>
+
+    <section class="container app-grid" aria-label="VIVIA applications">
+      <article class="card">
+        <h2>Property Listings</h2>
+        <p>Search available homes, review details, start screening, and access renter and landlord workflows.</p>
+        <a href="https://viviarentalhomes.zite.so" target="_blank" rel="noreferrer">Open Property Listings →</a>
+      </article>
+      <article class="card">
+        <h2>Payment Portal</h2>
+        <p>Public payment entry point for approved VIVIA rental charges and payment workflows.</p>
+        <a href="https://pay-now.zite.so" target="_blank" rel="noreferrer">Open Payment Portal →</a>
+      </article>
+      <article class="card">
+        <h2>VIVIA Wallet</h2>
+        <p>Resident wallet and funding tools connected to the VIVIA rental ecosystem.</p>
+        <a href="https://vv-wallet.zite.so" target="_blank" rel="noreferrer">Open VIVIA Wallet →</a>
+      </article>
+      <article class="card">
+        <h2>Employee Portal</h2>
+        <p>Internal operations portal for authorized VIVIA team members.</p>
+        <a href="https://app.zite.com/workspace/3799e13deff63e01/26haxtzrpx" target="_blank" rel="noreferrer">Open Employee Portal →</a>
+      </article>
+    </section>
+
+    <section class="container integrations">
+      <p class="eyebrow">Connected services</p>
+      <h2>VIVIA integration stack</h2>
+      <div class="chips">
+        <span>Stripe</span><span>HubSpot</span><span>Fillout</span><span>Gmail</span><span>Slack</span><span>OpenAI</span><span>Google Analytics</span><span>GitHub</span>
+      </div>
+      <p class="note">Square, Zillow, Zumper, TurboTenant, and other partner connections are added only when credentials or supported integrations are available. No private API keys are stored in this public repository.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> VIVIA Rentals</span>
+      <a href="https://github.com/withkoji/vivia-rentals" target="_blank" rel="noreferrer">Public repository</a>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
